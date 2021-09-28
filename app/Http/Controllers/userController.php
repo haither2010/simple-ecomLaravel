@@ -14,6 +14,8 @@ class userController extends Controller
         // $user = User::where("email", "=", "$req->email")->get();
         if($users->email == $req->email && $req->password == Hash::check($req->password, $users->password))
         {
+            //put method reference https://laravel.com/docs/8.x/collections#method-put
+            $req->session()->put('user', $users);
             return "Logged in welcom dear";
         }else
         {
