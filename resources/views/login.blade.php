@@ -1,10 +1,7 @@
-@extends('layouts.base')
+@extends('layouts.loginBase')
 
 @section("title", "Login | User")
 
-@section('menu')
-  <h1>here we are displaying menu part</h1>
-@endsection
 
 @section('content')
 

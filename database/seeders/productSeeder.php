@@ -17,39 +17,32 @@ class productSeeder extends Seeder
     {
         DB::table('products')->insert([
             [
-                'name' => 'samsung mobile',
-                'price' => '35000',
-                'category' => 'mobiles, samsung',
-                'description' => 'The best mobile with 3gb ram, 12px camera, led screen and more',
-                'gallery' => 'https://www.thechennaimobiles.com/image/cache/catalog/OPPO/6%20PRO-600x600.jpg'
+                'name' => 'Apple mobile',
+                'price' => '85000',
+                'category' => 'mobiles',
+                'description' => 'Apple red iPhone 11 64GB, Battery Capacity: 3110, 12MP best price in the market',
+                'gallery' => 'https://5.imimg.com/data5/SELLER/Default/2021/1/LV/VX/EG/14753644/iphone11--500x500.jpg'
             ],
             [
-                'name' => 'oppo mobile',
-                'price' => '25000',
-                'category' => 'mobiles, oppo',
-                'description' => 'The best mobile with 4gb ram, 16px camera, lcd screen and many more',
-                'gallery' => 'https://assetscdn1.paytm.com/images/catalog/product/M/MO/MOBOPPO-A52-6-GFUTU6297453D3D253C/1592019058170_0..png'
+                'name' => 'samsung refrigerator',
+                'price' => '95000',
+                'category' => 'electronics',
+                'description' => 'Specification:, Brand: Samsung, Capacity: 615 ltr, Dimension (W x H x D): 908 x 1825 x 733, Cooling features: No frost, Twin',
+                'gallery' => 'https://bowealth.com.ng/wp-content/uploads/2018/11/samsung_refrigerator_615_ltr_rh57h8231sa_2.jpg'
             ],
             [
-                'name' => 'samsung mobile',
-                'price' => '75000',
-                'category' => 'mobiles, samsung',
-                'description' => 'The best mobile with 8gb ram, 16px camera, gorilla class screen and many more',
-                'gallery' => 'https://images.samsung.com/is/image/samsung/p6pim/in/sm-a037fzbdins/gallery/in-galaxy-a03s-a037-sm-a037fzbdins-thumb-490358651?$320_320_PNG$'
+                'name' => 'lg refrigerator',
+                'price' => '78000',
+                'category' => 'electronics',
+                'description' => 'https://image.freepik.com/free-vector/red-black-open-refrigerator-with-products_1284-23311.jpg',
+                'gallery' => 'https://image.freepik.com/free-vector red-black-open-refrigerator-with-products_1284-23311.jpg'
             ],
             [
-                'name' => 'panasonic tv',
-                'price' => '29000',
-                'category' => 'eletronics, panasonic',
-                'description' => 'For those who do not want a "Full On Smart TV" this is an excellent alternative, particularly if one already has a "Set-Top Box" which provides all the necessary extra features up to a fully Smart version TV',
-                'gallery' => 'https://www.lg.com/uk/images/tvs/MD05942377/gallery/medium01.jpg'
-            ],
-            [
-                'name' => 'sony subboofer speeker',
-                'price' => '12000',
-                'category' => 'eletronics, sony',
-                'description' => 'PP Mica reinforcement cap for louder bass, Acoustic distortion is minimised by a rubber surround',
-                'gallery' => 'https://www.sony-mea.com/image/5d36e1f8c16703941764e656fb34293a?fmt=pjpeg&wid=660&hei=660&bgcolor=F1F5F9&bgc=F1F5F9'
+                'name' => 'xiomi rice cooker',
+                'price' => '12500',
+                'category' => 'electronics',
+                'description' => '0-cup capacity 1.8L jar type rice cooker Energy-saving and convenient  30% thicker inner pan keeps rice warmer longer Special honeycomb pattern makes rice stick less to the bottom of the pan',
+                'gallery' => 'https://toughmamaappliances.com/wp-content/uploads/2019/11/KRC18-J-HC-2.png'
             ],
         ]);
     }

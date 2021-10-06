@@ -1,0 +1,63 @@
+.carousel-cover {
+  height: 50vh !important;
+  background-color: #123;
+}
+.carousel-item {
+  max-height: 50vh !important;
+  background: no-repeat scroll center scroll;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-item img{
+  max-height: 100% !important;
+}
+
+.header-carouselItem::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.5;
+}
+
+/* .trend-card {
+  min-width: 23% !important;
+}
+
+.trend-card img{
+  height: 100% !important;
+} */
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .footer-search {
+    margin-top: 25px;
+  }
+ }
+
+ /* Medium devices (tablets, 768px and up)*/
+ @media (min-width: 768px) {
+  /* .footer-left {
+    margin-top: 25px !important;
+  } */
+ }
+
+ .trending-img img{
+  height: 200px;
+   background-color: rgb(255, 255, 255);
+ }
+
+ .img-contMain {
+   height: 200px;
+   background-color: white;
+ }
+
+ .details-img {
+   max-width: 100% !important;
+   max-height: 100% !important;
+ }
