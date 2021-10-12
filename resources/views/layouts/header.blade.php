@@ -1,3 +1,14 @@
+<?php
+
+  use App\Http\Controllers\ProductController;
+  
+  $totalCartItem = null;
+  if(Session::has('user'))
+  {
+    $totalCartItem  = ProductController::cartCount();
+  }
+?>
+
 <nav class="p-2 navbar navbar-expand-lg navbar-dark bg-dark fw-normal fs-6">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">HAI-SALE</a>
@@ -18,7 +29,23 @@
           <button class="btn btn-outline-success" type="submit" name="searchBtn">Search</button>
         </form>
       </ul>
-      <span class="text-white fw-normal fs-6">Cart 0</span>
+      <ul class="me-3 navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Cart ({{ $totalCartItem }})</a></li>
+        <li class="text-white nav-item dropdown bg-dark">
+            @if (session()->has('user'))
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              {{ session()->get('user')['name'] }}
+            </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="#">hello</a></li>
+                <li><a class="dropdown-item" href="#">Babies</a></li>
+                <li><a class="dropdown-item" href="/logout">Logout</a></li>
+              </ul>
+            @else
+            <a class="nav-link" href="/login" id="" role="" data-bs-toggle=""> Login </a>
+            @endif  
+        </li>
+      </ul>
     </div>
   </div>
 </nav>

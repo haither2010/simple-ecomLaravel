@@ -6,6 +6,24 @@
 @section('content')
 {{-- carousel trending products --}}
 <div class="container">
+ {{--  @php
+    if(session()->exists('success'))
+    {
+      /* echo "
+          <div class=\"alert alert-success alert-dismissible fade show\" role=\"alert\">
+            {$success}
+            <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>
+          </div>
+      "; */
+    }
+  @endphp --}}
+  @if (session()->exists('success'))
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+   {{  $success }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  @endif
+  
   <h3 class="my-5 text-secondary">Trending Products</h3>
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">

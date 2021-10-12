@@ -16,11 +16,17 @@ class userController extends Controller
         {
             //put method reference https://laravel.com/docs/8.x/collections#method-put
             $req->session()->put('user', $users);
-            return "Logged in welcom dear";
+            return redirect('/');
         }else
         {
             return redirect('/');
         }
+    }
+
+    function logout(Request $req)
+    {
+        $req->session()->forget('user');
+        return redirect('/');
     }
 }
 

@@ -20,7 +20,11 @@
         <p class="p-1 text-secondary">Price: <span class="p-2 text-capitalize fst-italic badge bg-secondary fw-bold">Rs. {{ $product->price }}</span></p>
         <div class="my-4 d-flex justify-content-between">
           <button type="button" id="{{ $product->id }}" class="btn btn-success"><i class="fas fa-shopping-cart"></i> Buy Now</button>
-          <button type="button" id="{{ $product->id }}" class="btn btn-outline-warning"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          <form action="{{ route('product.add') }}" method="post">
+            @csrf
+            <input type="hidden" name="productId" id="" value="{{ $product->id }}">
+            <button type="submit" id="{{ $product->id }}" class="btn btn-outline-warning" name="addCart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </form>
         </div>
       </div>
     </div>
