@@ -22,6 +22,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/login', function () {
     return view('login');
 });
+
 Route::get('/logout', function () {
     session()->forget('user');
     return view('login');
@@ -33,3 +34,6 @@ Route::get('/details/{id}', [ProductController::class, 'details']);
 
 Route::post('search', [ProductController::class, 'search'])->name('product.search');
 Route::post('addtocart', [ProductController::class, 'addtocart'])->name('product.add');
+Route::get('/cartdetails', [ProductController::class, 'cartdetails'])->name('cart.details');
+Route::get('/remove-cart/{id}', [ProductController::class, 'removeCart'])->name('remove.cart');
+Route::get('/ordernow', [ProductController::class, 'ordernow'])->name('ordernow');

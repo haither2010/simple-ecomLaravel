@@ -61,3 +61,19 @@
    max-width: 100% !important;
    max-height: 100% !important;
  }
+
+ .form-col {
+   max-width: 5rem;
+ }
+
+ table .alcenter{
+   text-align: center;
+ }
+
+ table .alend {
+   text-align: right;
+ }
+
+ table .alstart{
+   text-align: left;
+ }

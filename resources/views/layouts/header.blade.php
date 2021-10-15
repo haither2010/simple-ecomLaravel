@@ -30,7 +30,16 @@
         </form>
       </ul>
       <ul class="me-3 navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#">Cart ({{ $totalCartItem }})</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="@php
+            if($totalCartItem != null)
+            {
+              echo "/cartdetails";
+            }
+          @endphp">
+            Cart ({{ $totalCartItem }})
+          </a>
+        </li>
         <li class="text-white nav-item dropdown bg-dark">
             @if (session()->has('user'))
             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -36,7 +36,6 @@
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
           </ul>
-          <span class="text-white fw-normal fs-6">Cart 0</span>
         </div>
       </div>
     </nav>
@@ -48,6 +47,11 @@
           @yield('content')
         </div>
       </div>
+    </div>
+
+    {{-- added this container to use in card details page --}}
+    <div class="containerWrap">
+      @yield('container')
     </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

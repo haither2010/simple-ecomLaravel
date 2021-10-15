@@ -23,11 +23,11 @@ class userController extends Controller
         }
     }
 
-    function logout(Request $req)
+    /* function logout(Request $req)
     {
         $req->session()->forget('user');
         return redirect('/');
-    }
+    } */
 }
 
 
